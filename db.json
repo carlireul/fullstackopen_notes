@@ -1,0 +1,24 @@
+{
+  "notes": [
+    {
+      "id": "5655",
+      "content": "hello",
+      "important": false
+    },
+    {
+      "id": "4dfd",
+      "content": "ote",
+      "important": false
+    },
+    {
+      "id": "2cfc",
+      "content": "a new note...",
+      "important": false
+    },
+    {
+      "id": "02f7",
+      "content": "a new note...",
+      "important": true
+    }
+  ]
+}
