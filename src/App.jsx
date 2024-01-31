@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Note from './components/Note'
-import noteService from './services/notes'
+import noteService from './services/noteService'
 import Notification from './components/Notification'
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
 
   useEffect(() => {
     noteService
-    .getAll()
+    .getAll() 
     .then(initialNotes => {
       setNotes(initialNotes)
     })
@@ -69,11 +69,11 @@ const App = () => {
     <div>
       <h1>Notes</h1>
       <Notification message={errorMessage} />
-      {/* <div>
+      <div>
         <button onClick={() => setShowAll(!showAll)}>
           show {showAll ? 'important' : 'all'}
         </button>
-      </div> */}
+      </div>
       <ul>
         {notesToShow.map(note =>
           <Note
