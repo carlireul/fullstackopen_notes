@@ -69,11 +69,11 @@ const App = () => {
     <div>
       <h1>Notes</h1>
       <Notification message={errorMessage} />
-      <div>
+      {/* <div>
         <button onClick={() => setShowAll(!showAll)}>
           show {showAll ? 'important' : 'all'}
         </button>
-      </div>
+      </div> */}
       <ul>
         {notesToShow.map(note =>
           <Note
