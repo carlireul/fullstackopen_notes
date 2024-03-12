@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+<<<<<<< HEAD
 mongoose.set('strictQuery', false);
 
 const url = process.env.MONGODB_URI;
@@ -23,6 +24,19 @@ const noteSchema = new mongoose.Schema({
     required: true,
   },
   important: Boolean,
+=======
+const noteSchema = new mongoose.Schema({
+  content: {
+    type: String,
+    required: true,
+    minlength: 5,
+  },
+  important: Boolean,
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User'
+  },
+>>>>>>> newstuff/main
 });
 
 noteSchema.set('toJSON', {
